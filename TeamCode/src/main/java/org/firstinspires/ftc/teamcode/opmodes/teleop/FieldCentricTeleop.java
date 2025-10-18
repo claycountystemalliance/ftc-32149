@@ -32,7 +32,7 @@ import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import org.firstinspires.ftc.teamcode.hardware.MecanumDrive;
 
-@TeleOp(name = "Robot:  Feild Centric Tele", group = "Robot")
+@TeleOp(name = "Robot:  Field Centric Tele", group = "Robot")
 public class FieldCentricTeleop extends OpMode {
     MecanumDrive driveControl = new MecanumDrive();
     @Override
@@ -49,10 +49,9 @@ public class FieldCentricTeleop extends OpMode {
 
         // If you press the A button, then you reset the Yaw to be zero from the way
         // the robot is currently pointing
-        if (gamepad1.a) {
+        if (gamepad1.ps) {
             driveControl.imu.resetYaw();
         }
-        
         // If you press the left bumper, you get a drive from the point of view of the robot
         // (much like driving an RC vehicle)
         if (gamepad1.touchpad) {
