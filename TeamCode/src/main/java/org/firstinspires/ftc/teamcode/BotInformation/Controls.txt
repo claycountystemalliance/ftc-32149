@@ -1,0 +1,14 @@
+Bot Controls
+
+| Gamepad Input | Function |
+----------------------------
+| Right Joystick | Turn left and right |
+| Left Joystick | Drive Forward and Reverse |
+| Home/Ps button | Cycle OpModes during Initialization  (Auto code only) |
+| Right Bumper | Activates flywheel, feeder Core Hex, and agitator servo to automatically fire at "bank shot" (near) range |
+| Left Bumper | Activates flywheel, feeder Core Hex, and agitator servo to automatically fire at "far shot" range |
+| Left Dpad/Right Dpad | Manually rotate agitator servo |
+| A/Cross | Manually spins the Core Hex at half speed |
+| B/Circle | Manually spins flywheel to "bank shot" (near) velocity |
+| Y/Triangle | Manually spins the Core Hex at half speed |
+| X/Square | Manually spins flywheel to "max" velocity |
