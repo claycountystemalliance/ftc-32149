@@ -52,6 +52,7 @@ public class FieldCentricTeleop extends OpMode {
         if (gamepad1.a) {
             driveControl.imu.resetYaw();
         }
+        
         // If you press the left bumper, you get a drive from the point of view of the robot
         // (much like driving an RC vehicle)
         if (gamepad1.touchpad) {
