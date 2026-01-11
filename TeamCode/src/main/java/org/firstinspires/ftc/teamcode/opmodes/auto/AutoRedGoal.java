@@ -34,7 +34,6 @@ public class AutoRedGoal extends LinearOpMode {
         intake.init(hardwareMap);
         waitForStart();
         drive.drive(1, 1000, DriveDirection.LEFT);
-       
         
         
         

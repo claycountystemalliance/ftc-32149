@@ -2,6 +2,7 @@ package org.firstinspires.ftc.teamcode.opmodes.teleop.tests;
 
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+import com.qualcomm.robotcore.hardware.Gamepad;
 
 import org.firstinspires.ftc.teamcode.hardware.Intake;
 import org.firstinspires.ftc.teamcode.hardware.driving.MecanumDrive;
@@ -28,7 +29,12 @@ public class Teleop extends OpMode {
     }
     
     private void handleOutake(){
-        outake.spin(gamepad2.right_trigger);
+        if (gamepad2.right_trigger > 0) {
+            outake.spin(0.76);
+        }
+        else {
+            outake.stop();
+        }
         if (gamepad2.dpad_up) {
             outake.liftBall();
         } else {
