@@ -4,11 +4,11 @@ import com.qualcomm.robotcore.hardware.CRServo;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
-public class Pusher {
+public class Blender {
     CRServo servo;
     
     public void init(HardwareMap hardwareMap) {
-        servo = hardwareMap.get(CRServo.class, "pusher");
+        servo = hardwareMap.get(CRServo.class, "blender");
         servo.setDirection(DcMotorSimple.Direction.REVERSE);
     }
     

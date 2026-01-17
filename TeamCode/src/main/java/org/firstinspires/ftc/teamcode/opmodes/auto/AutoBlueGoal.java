@@ -5,14 +5,14 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 
 import org.firstinspires.ftc.teamcode.hardware.Intake;
 import org.firstinspires.ftc.teamcode.hardware.Outake;
-import org.firstinspires.ftc.teamcode.hardware.Pusher;
+import org.firstinspires.ftc.teamcode.hardware.Blender;
 import org.firstinspires.ftc.teamcode.hardware.driving.AutoDrive;
 import org.firstinspires.ftc.teamcode.hardware.driving.enums.DriveDirection;
 
 @Autonomous(name = "Tests: Auto Blue Goal", group = "Tests")
 public class AutoBlueGoal extends LinearOpMode {
     AutoDrive drive = new AutoDrive();
-    Pusher pusher = new Pusher();
+    Blender blender = new Blender();
     Outake outake = new Outake();
     Intake intake = new Intake();
     
@@ -29,7 +29,7 @@ public class AutoBlueGoal extends LinearOpMode {
     @Override
     public void runOpMode() throws InterruptedException {
         drive.init(hardwareMap);
-        pusher.init(hardwareMap);
+        blender.init(hardwareMap);
         outake.init(hardwareMap);
         intake.init(hardwareMap);
         waitForStart();

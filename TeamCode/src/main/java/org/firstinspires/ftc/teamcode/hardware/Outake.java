@@ -15,7 +15,7 @@ public class Outake {
     
     
     public void init(HardwareMap hardwareMap) {
-        motor = hardwareMap.get(DcMotor.class, "launch");
+        motor = hardwareMap.get(DcMotor.class, "outake");
         motor.setDirection(DcMotorSimple.Direction.FORWARD);
         servo = hardwareMap.get(Servo.class, "lifter");
         servo.setPosition(.33);

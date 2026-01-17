@@ -14,10 +14,10 @@ public class MecanumDrive {
     
     public void init(HardwareMap hardwareMap) {
         // Initialize motors
-        frontLeft = hardwareMap.get(DcMotor.class, "leftfront");
-        frontRight = hardwareMap.get(DcMotor.class, "rightfront");
-        backLeft = hardwareMap.get(DcMotor.class, "leftrear");
-        backRight = hardwareMap.get(DcMotor.class, "rightrear");
+        frontLeft = hardwareMap.get(DcMotor.class, "frotnleft");
+        frontRight = hardwareMap.get(DcMotor.class, "frontright");
+        backLeft = hardwareMap.get(DcMotor.class, "backleft");
+        backRight = hardwareMap.get(DcMotor.class, "backright");
         
         // Set motor directions
         // You may need to reverse some motors depending on your robot's configuration

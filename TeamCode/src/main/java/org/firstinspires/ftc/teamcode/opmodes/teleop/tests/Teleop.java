@@ -2,19 +2,18 @@ package org.firstinspires.ftc.teamcode.opmodes.teleop.tests;
 
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
-import com.qualcomm.robotcore.hardware.Gamepad;
 
 import org.firstinspires.ftc.teamcode.hardware.Intake;
 import org.firstinspires.ftc.teamcode.hardware.driving.MecanumDrive;
 import org.firstinspires.ftc.teamcode.hardware.Outake;
-import org.firstinspires.ftc.teamcode.hardware.Pusher;
+import org.firstinspires.ftc.teamcode.hardware.Blender;
 
 @TeleOp(name = "Comp: Teleop", group = "Comp")
 public class Teleop extends OpMode {
     private MecanumDrive drive = new MecanumDrive();
     private Intake intake = new Intake();
     private Outake outake = new Outake();
-    private Pusher pusher = new Pusher();
+    private Blender blender = new Blender();
     
     
     private void handleIntake(){
@@ -43,11 +42,11 @@ public class Teleop extends OpMode {
     }
     private void handlePusher() {
         if (gamepad2.right_bumper) {
-            pusher.spin();
+            blender.spin();
             
         }
         else {
-            pusher.stop();
+            blender.stop();
         }
     }
     
@@ -59,7 +58,7 @@ public class Teleop extends OpMode {
         drive.init(hardwareMap);
         outake.init(hardwareMap);
         intake.init(hardwareMap);
-        pusher.init(hardwareMap);
+        blender.init(hardwareMap);
     }
 
     @Override
